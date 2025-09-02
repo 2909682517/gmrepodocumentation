@@ -1,7 +1,7 @@
 site_name: GMrepo documentation
 # site_url: https://
 site_url: https://2909682517.github.io/gmrepodocumentation/
-
+use_directory_urls: true
 
 # site_url: http://gmrepo2018.local/help
 site_description: User documentation for GMrepo.

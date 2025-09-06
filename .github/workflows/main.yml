@@ -3,7 +3,7 @@ name: deploy MkDocs site
 on:
   push:
     branches:
-      - main   # 每次推送到 main 分支时触发
+      - master   # 每次推送到 master 分支时触发
 
 jobs:
   deploy:

@@ -1,19 +1,17 @@
-name: Deploy MkDocs
+name: deploy MkDocs site
+
 on:
   push:
-    branches: [main]
+    branches:
+      - main   # 每次推送到 main 分支时触发
+
 jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
-      - uses: actions/setup-python@v2
+      - uses: actions/checkout@v3
+      - uses: actions/setup-python@v4
         with:
           python-version: 3.x
       - run: pip install mkdocs mkdocs-material
-      - run: mkdocs build --site-dir site
-      - name: Deploy
-        uses: peaceiris/actions-gh-pages@v3
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./site
+      - run: mkdocs gh-deploy --force

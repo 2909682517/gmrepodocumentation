@@ -51,7 +51,7 @@ For more details, consult the [SRA Toolkit documentation](https://trace.ncbi.nlm
 
 
 ## Programmable access
-
+<!-- 
 **GMrepo** also provides programmable access to most database contents via `RESTful APIs`.
 
 Below are example codes in languages commonly used in our lab. Users of other languages can adapt from these examples or [contact us](https://gmrepo2025.humangut.info:8443/home) for help:
@@ -61,3 +61,4 @@ Below are example codes in languages commonly used in our lab. Users of other la
 -   [Python (2 & 3)](https://github.com/evolgeniusteam/GMrepoProgrammableAccess/blob/master/programmable-access/python.md)
  
 See our [GitHub page](https://github.com/evolgeniusteam/GMrepoProgrammableAccess) for more details.
+ -->

@@ -12,6 +12,8 @@
         <meta name="author" content="Wei-Hua Chen">
       
       
+        <link rel="canonical" href="https://2909682517.github.io/gmrepodocumentation/usage/downloaddatafromgmrepo/">
+      
       
         <link rel="prev" href="../crossprojectcomprisons/">
       
@@ -880,51 +882,24 @@
 <td>A list of projects and related information such as project description.</td>
 </tr>
 <tr>
-<td><a href="https://gmrepo2025.humangut.info:8443/Downloads/SQLDumps/projects_summary.txt.gz">Projects summary</a></td>
+<td><a href="[https://gmrepo2025.humangut.info:8443/Downloads/SQLDumps/projects_summary.txt.gz](https://gmrepo2025.humangut.info:8443/Downloads/SQLDumps/stats_by_phenotype_and_project.txt.gz)">Projects summary</a></td>
 <td>A list of projects and information such as total numbers of associated runs, processed runs, valid runs and failed runs.</td>
 </tr>
 <tr>
 <td><a href="https://gmrepo2025.humangut.info:8443/Downloads/SQLDumps/sample_to_run_info.txt.gz">All runs</a></td>
 <td>Information on runs/samples collected in this database, including their associated projects and other curated meta-data.</td>
 </tr>
-<tr>
-<td><a href="https://gmrepo2025.humangut.info:8443/Downloads/SQLDumps/sample_to_disease_info.txt.gz">Runs to phenotypes</a></td>
-<td>All runs and their corresponding phenotypes (if any); one run/sample can be associated with multiple phenotypes.</td>
-</tr>
-<tr>
-<td><a href="https://gmrepo2025.humangut.info:8443/Downloads/SQLDumps/samples_loaded.txt.gz">Processed runs</a></td>
-<td>A list of processed runs, tools used for analysis, and their QC statuses.</td>
-</tr>
-<tr>
-<td><a href="https://gmrepo2025.humangut.info:8443/Downloads/SQLDumps/species_abundance.txt.gz">Relative abundances</a></td>
-<td>Relative abundances at species and genus levels in samples/runs that passed our QC criteria.</td>
-</tr>
-<tr>
-<td><a href="https://gmrepo2025.humangut.info:8443/Downloads/SQLDumps/species_abundance_summary.txt.gz">Relative abundance summary</a></td>
-<td>Summary statistics on the taxonomic abundance data.</td>
-</tr>
-<tr>
-<td><a href="https://gmrepo2025.humangut.info:8443/Downloads/SQLDumps/species_cooccurence.txt.gz">Taxon co-occurrence data</a></td>
-<td>Taxon co-occurrence in runs/samples of each phenotype, calculated separately for species and genus.</td>
-</tr>
-<tr>
-<td><a href="https://gmrepo2025.humangut.info:8443/Downloads/SQLDumps/stats_by_phenotype.txt.gz">Statistics by phenotype</a></td>
-<td>Statistics by phenotype, including number of runs (with meta-data), processed/valid/failed runs, and number of associated species and genera.</td>
-</tr>
-<tr>
-<td><a href="https://gmrepo2025.humangut.info:8443/Downloads/SQLDumps/gmrepo.sql.gz">MySQL dump of the whole database</a></td>
-<td>MySQL dump of all tables in the database.</td>
-</tr>
-<tr>
-<td><a href="https://gmrepo2025.humangut.info:8443/Downloads/SQLDumps/mesh_data.txt.gz">MeSH table</a></td>
-<td>Medical Subject Headings (MeSH) data used in this study.</td>
-</tr>
-<tr>
-<td><a href="https://gmrepo2025.humangut.info:8443/Downloads/SQLDumps/superkingdom2descendents.txt.gz">NCBI taxonomy table</a></td>
-<td>Reformatted NCBI taxonomy: taxon ID to scientific name and rank.</td>
-</tr>
 </tbody>
 </table>
+<!-- | [Runs to phenotypes](https://gmrepo2025.humangut.info:8443/Downloads/SQLDumps/sample_to_disease_info.txt.gz) | All runs and their corresponding phenotypes (if any); one run/sample can be associated with multiple phenotypes. | -->
+<p>| <a href="https://gmrepo2025.humangut.info:8443/Downloads/SQLDumps/samples_loaded.txt.gz">Processed runs</a> | A list of processed runs, tools used for analysis, and their QC statuses. |
+| <a href="https://gmrepo2025.humangut.info:8443/Downloads/SQLDumps/species_abundance.txt.gz">Relative abundances</a> | Relative abundances at species and genus levels in samples/runs that passed our QC criteria. |
+| <a href="https://gmrepo2025.humangut.info:8443/Downloads/SQLDumps/species_abundance_summary.txt.gz">Relative abundance summary</a> | Summary statistics on the taxonomic abundance data. |
+| <a href="https://gmrepo2025.humangut.info:8443/Downloads/SQLDumps/species_cooccurence.txt.gz">Taxon co-occurrence data</a> | Taxon co-occurrence in runs/samples of each phenotype, calculated separately for species and genus. |
+| <a href="https://gmrepo2025.humangut.info:8443/Downloads/SQLDumps/stats_by_phenotype.txt.gz">Statistics by phenotype</a> | Statistics by phenotype, including number of runs (with meta-data), processed/valid/failed runs, and number of associated species and genera. |
+| <a href="https://gmrepo2025.humangut.info:8443/Downloads/SQLDumps/gmrepo.sql.gz">MySQL dump of the whole database</a> | MySQL dump of all tables in the database. |
+| <a href="https://gmrepo2025.humangut.info:8443/Downloads/SQLDumps/mesh_data.txt.gz">MeSH table</a> | Medical Subject Headings (MeSH) data used in this study. |
+| <a href="https://gmrepo2025.humangut.info:8443/Downloads/SQLDumps/superkingdom2descendents.txt.gz">NCBI taxonomy table</a> | Reformatted NCBI taxonomy: taxon ID to scientific name and rank. |</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>Please note that in the NCBI taxonomy database, two types of taxonomy IDs are used:</p>
@@ -953,14 +928,17 @@
   prefetch [options] <run_accession_id>
 For more details, consult the <a href="https://trace.ncbi.nlm.nih.gov/Traces/sra/sra.cgi?view=toolkit_doc">SRA Toolkit documentation</a>.</p>
 <h2 id="programmable-access">Programmable access<a class="headerlink" href="#programmable-access" title="Permanent link">&para;</a></h2>
-<p><strong>GMrepo</strong> also provides programmable access to most database contents via <code>RESTful APIs</code>.</p>
-<p>Below are example codes in languages commonly used in our lab. Users of other languages can adapt from these examples or <a href="https://gmrepo2025.humangut.info:8443/home">contact us</a> for help:</p>
-<ul>
-<li><a href="https://github.com/evolgeniusteam/GMrepoProgrammableAccess/blob/master/programmable-access/R.md">R</a></li>
-<li><a href="https://github.com/evolgeniusteam/GMrepoProgrammableAccess/blob/master/programmable-access/perl.md">Perl</a></li>
-<li><a href="https://github.com/evolgeniusteam/GMrepoProgrammableAccess/blob/master/programmable-access/python.md">Python (2 &amp; 3)</a></li>
-</ul>
-<p>See our <a href="https://github.com/evolgeniusteam/GMrepoProgrammableAccess">GitHub page</a> for more details.</p>
+<!-- 
+**GMrepo** also provides programmable access to most database contents via `RESTful APIs`.
+
+Below are example codes in languages commonly used in our lab. Users of other languages can adapt from these examples or [contact us](https://gmrepo2025.humangut.info:8443/home) for help:
+
+-   [R](https://github.com/evolgeniusteam/GMrepoProgrammableAccess/blob/master/programmable-access/R.md)
+-   [Perl](https://github.com/evolgeniusteam/GMrepoProgrammableAccess/blob/master/programmable-access/perl.md)
+-   [Python (2 & 3)](https://github.com/evolgeniusteam/GMrepoProgrammableAccess/blob/master/programmable-access/python.md)
+
+See our [GitHub page](https://github.com/evolgeniusteam/GMrepoProgrammableAccess) for more details.
+ -->
 
 
 

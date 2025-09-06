@@ -7,7 +7,7 @@
 | **File** | **Description** |
 | -------- | --------------- |
 | [Projects](https://gmrepo2025.humangut.info:8443/Downloads/SQLDumps/projects.txt.gz) | A list of projects and related information such as project description. |
-| [Projects summary]([https://gmrepo2025.humangut.info:8443/Downloads/SQLDumps/projects_summary.txt.gz](https://gmrepo2025.humangut.info:8443/Downloads/SQLDumps/stats_by_phenotype_and_project.txt.gz)) | A list of projects and information such as total numbers of associated runs, processed runs, valid runs and failed runs. |
+| [Projects summary](https://gmrepo2025.humangut.info:8443/Downloads/SQLDumps/stats_by_phenotype_and_project.txt.gz) | A list of projects and information such as total numbers of associated runs, processed runs, valid runs and failed runs. |
 | [All runs](https://gmrepo2025.humangut.info:8443/Downloads/SQLDumps/sample_to_run_info.txt.gz) | Information on runs/samples collected in this database, including their associated projects and other curated meta-data. | 
 <!-- | [Runs to phenotypes](https://gmrepo2025.humangut.info:8443/Downloads/SQLDumps/sample_to_disease_info.txt.gz) | All runs and their corresponding phenotypes (if any); one run/sample can be associated with multiple phenotypes. | -->
 | [Processed runs](https://gmrepo2025.humangut.info:8443/Downloads/SQLDumps/samples_loaded.txt.gz) | A list of processed runs, tools used for analysis, and their QC statuses. |
@@ -49,9 +49,9 @@ Alternatively, use command-line tools from the [SRA Toolkit](https://trace.ncbi.
   prefetch [options] <run_accession_id>
 For more details, consult the [SRA Toolkit documentation](https://trace.ncbi.nlm.nih.gov/Traces/sra/sra.cgi?view=toolkit_doc).
 
-
-## Programmable access
 <!-- 
+## Programmable access
+
 **GMrepo** also provides programmable access to most database contents via `RESTful APIs`.
 
 Below are example codes in languages commonly used in our lab. Users of other languages can adapt from these examples or [contact us](https://gmrepo2025.humangut.info:8443/home) for help:

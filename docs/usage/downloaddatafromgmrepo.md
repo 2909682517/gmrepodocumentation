@@ -43,8 +43,8 @@ Alternatively, use command-line tools from the [SRA Toolkit](https://trace.ncbi.
   
   ```bash
   fastq-dump [options] <run_accession_id>
-* [`prefetch`](https://trace.ncbi.nlm.nih.gov/Traces/sra/sra.cgi?view=toolkit_doc&f=prefetch): download SRA, dbGaP and ADSP data. Usage:
-* 
+- [`prefetch`](https://trace.ncbi.nlm.nih.gov/Traces/sra/sra.cgi?view=toolkit_doc&f=prefetch): download SRA, dbGaP and ADSP data. Usage:
+ 
   ```bash
   prefetch [options] <run_accession_id>
 For more details, consult the [SRA Toolkit documentation](https://trace.ncbi.nlm.nih.gov/Traces/sra/sra.cgi?view=toolkit_doc).

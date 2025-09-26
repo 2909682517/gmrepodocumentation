@@ -10,9 +10,9 @@
 ## Quality control
 
 Two rounds of quality control procedures were applied.  
-First, for the 16S data, samples (runs) with less than 20,000 `clean reads` were removed from subsequent analysis, and marked as "failed QC (QC status == 0)" in **GMrepo**.
+First, for the 16S data, samples (runs) with less than 20,000 `clean reads` were removed from subsequent analysis, and marked as "failed QC (QC status = 0)" in **GMrepo**.
 
-Then, after taxonomy assignment, samples containing only a single taxon (i.e., a species or genus accounting for more than 99.99 percent of total abundance) were marked as "failed QC (QC status == 0)".
+Then, after taxonomy assignment, samples containing only a single taxon (i.e., a species or genus accounting for more than 99.99 percent of total abundance) were marked as "failed QC (QC status = 0)".
 
 ## Taxonomic assignment to the sequenced reads
 

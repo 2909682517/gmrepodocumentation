@@ -6,18 +6,18 @@
 
 | **File** | **Description** |
 | -------- | --------------- |
-| [Projects](https://gmrepo2025.humangut.info:8443/Downloads/SQLDumps/projects.txt.gz) | A list of projects and related information such as project description. |
-| [Projects summary](https://gmrepo2025.humangut.info:8443/Downloads/SQLDumps/stats_by_phenotype_and_project.txt.gz) | A list of projects and information such as total numbers of associated runs, processed runs, valid runs and failed runs. |
-| [All runs](https://gmrepo2025.humangut.info:8443/Downloads/SQLDumps/sample_to_run_info.txt.gz) | Information on runs/samples collected in this database, including their associated projects and other curated meta-data. | 
-| [Processed runs](https://gmrepo2025.humangut.info:8443/Downloads/SQLDumps/samples_loaded.txt.gz) | A list of processed runs, tools used for analysis, and their QC statuses. |
-| [Relative abundances](https://gmrepo2025.humangut.info:8443/Downloads/SQLDumps/species_abundance.txt.gz) | Relative abundances at species and genus levels in samples/runs that passed our QC criteria. |
-| [Relative abundance summary](https://gmrepo2025.humangut.info:8443/Downloads/SQLDumps/species_abundance_summary.txt.gz) | Summary statistics on the taxonomic abundance data. |
-| [Taxon co-occurrence data](https://gmrepo2025.humangut.info:8443/Downloads/SQLDumps/species_cooccurence.txt.gz) | Taxon co-occurrence in runs/samples of each phenotype, calculated separately for species and genus. |
-| [Statistics by phenotype](https://gmrepo2025.humangut.info:8443/Downloads/SQLDumps/stats_by_phenotype.txt.gz) | Statistics by phenotype, including number of runs (with meta-data), processed/valid/failed runs, and number of associated species and genera. |
-| [MySQL dump of the whole database](https://gmrepo2025.humangut.info:8443/Downloads/SQLDumps/gmrepo.sql.gz) | MySQL dump of all tables in the database. |
-| [MeSH table](https://gmrepo2025.humangut.info:8443/Downloads/SQLDumps/mesh_data.txt.gz) | Medical Subject Headings (MeSH) data used in this study. |
-| [NCBI taxonomy table](https://gmrepo2025.humangut.info:8443/Downloads/SQLDumps/superkingdom2descendents.txt.gz) | Reformatted NCBI taxonomy: taxon ID to scientific name and rank. |
-<!-- | [Runs to phenotypes](https://gmrepo2025.humangut.info:8443/Downloads/SQLDumps/sample_to_disease_info.txt.gz) | All runs and their corresponding phenotypes (if any); one run/sample can be associated with multiple phenotypes. | -->
+| [Projects](https://gmrepo.humangut.info/Downloads/SQLDumps/projects.txt.gz) | A list of projects and related information such as project description. |
+| [Projects summary](https://gmrepo.humangut.info/Downloads/SQLDumps/stats_by_phenotype_and_project.txt.gz) | A list of projects and information such as total numbers of associated runs, processed runs, valid runs and failed runs. |
+| [All runs](https://gmrepo.humangut.info/Downloads/SQLDumps/sample_to_run_info.txt.gz) | Information on runs/samples collected in this database, including their associated projects and other curated meta-data. | 
+| [Processed runs](https://gmrepo.humangut.info/Downloads/SQLDumps/samples_loaded.txt.gz) | A list of processed runs, tools used for analysis, and their QC statuses. |
+| [Relative abundances](https://gmrepo.humangut.info/Downloads/SQLDumps/species_abundance.txt.gz) | Relative abundances at species and genus levels in samples/runs that passed our QC criteria. |
+| [Relative abundance summary](https://gmrepo.humangut.info/Downloads/SQLDumps/species_abundance_summary.txt.gz) | Summary statistics on the taxonomic abundance data. |
+| [Taxon co-occurrence data](https://gmrepo.humangut.info/Downloads/SQLDumps/species_cooccurence.txt.gz) | Taxon co-occurrence in runs/samples of each phenotype, calculated separately for species and genus. |
+| [Statistics by phenotype](https://gmrepo.humangut.info/Downloads/SQLDumps/stats_by_phenotype.txt.gz) | Statistics by phenotype, including number of runs (with meta-data), processed/valid/failed runs, and number of associated species and genera. |
+| [MySQL dump of the whole database](https://gmrepo.humangut.info/Downloads/SQLDumps/gmrepo.sql.gz) | MySQL dump of all tables in the database. |
+| [MeSH table](https://gmrepo.humangut.info/Downloads/SQLDumps/mesh_data.txt.gz) | Medical Subject Headings (MeSH) data used in this study. |
+| [NCBI taxonomy table](https://gmrepo.humangut.info/Downloads/SQLDumps/superkingdom2descendents.txt.gz) | Reformatted NCBI taxonomy: taxon ID to scientific name and rank. |
+<!-- | [Runs to phenotypes](https://gmrepo.humangut.info/Downloads/SQLDumps/sample_to_disease_info.txt.gz) | All runs and their corresponding phenotypes (if any); one run/sample can be associated with multiple phenotypes. | -->
 
 !!! note
     Please note that in the NCBI taxonomy database, two types of taxonomy IDs are used:
@@ -58,7 +58,7 @@ For more details, consult the [SRA Toolkit documentation](https://trace.ncbi.nlm
 
 **GMrepo** also provides programmable access to most database contents via `RESTful APIs`.
 
-Below are example codes in languages commonly used in our lab. Users of other languages can adapt from these examples or [contact us](https://gmrepo2025.humangut.info:8443/home) for help:
+Below are example codes in languages commonly used in our lab. Users of other languages can adapt from these examples or [contact us](https://gmrepo.humangut.info/home) for help:
 
 -   [R](https://github.com/evolgeniusteam/GMrepoProgrammableAccess/blob/master/programmable-access/R.md)
 -   [Perl](https://github.com/evolgeniusteam/GMrepoProgrammableAccess/blob/master/programmable-access/perl.md)
